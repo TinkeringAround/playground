@@ -1,0 +1,10 @@
+{
+  "port": 3000,
+  "host": "localhost",
+  "open": false,
+  "root": "src",
+  "file": "src/index.html",
+  "ignore": "",
+  "wait": 1000,
+  "logLevel": 2
+}
