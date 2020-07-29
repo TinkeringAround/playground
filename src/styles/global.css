@@ -1,0 +1,24 @@
+:root {
+    /* Colors */
+    --orange: #ef441c;
+    --red: #ec2e32;
+    --pink: #e7075c;
+    --green: #9aecc8;
+
+    --black: #444;
+
+    --logoGradient: linear-gradient(to bottom, var(--orange), var(--red), var(--pink));
+
+    /* Sizes */
+    --header: 125px;
+    --footer: 400px;
+
+    --box-width: 25vw;
+    --box-height: 60vh;
+}
+
+.withGradient {
+    background-image: var(--logoGradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

@@ -10,6 +10,7 @@
 
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="src/styles/index.css">
+    <link rel="stylesheet" type="text/css" href="src/styles/global.css">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -17,14 +18,23 @@
 
 <body>
 <header class="header">
-    <h1 class="logo">ThomasMaier</h1>
+    <h1 class="logo withGradient">ThomasMaier.</h1>
 </header>
 
 <main class="content">
     <div class="intro"></div>
 
     <section class="projects">
-        <h1 class="headline">Projects</h1>
+        <h1 class="headline withGradient">Projects</h1>
+
+        <ul class="filter">
+            <li class="item active">
+               <a>Komponenten</a>
+            </li>
+            <li class="item">
+                <a>Logos</a>
+            </li>
+        </ul>
 
         <div class="list">
             <div class="project"></div>
@@ -40,7 +50,7 @@
 
 </main>
 
-<footer>Footer</footer>
+<footer class="footer">Footer</footer>
 </body>
 
 </html>
