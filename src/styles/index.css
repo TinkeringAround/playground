@@ -1,20 +1,6 @@
-html {
-    height: 100%;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-}
-
-body {
-    margin: 0;
-
-    font-size: 16px;
-    color: var(--black);
-    font-family: 'Open Sans', sans-serif;
-    line-height: normal;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+:root {
+    --box-width: 25vw;
+    --box-height: 40vh;
 }
 
 .header {
@@ -43,6 +29,8 @@ body {
     align-items: center;
 
     box-sizing: border-box;
+
+    transition: height 0.5s ease;
 }
 
 .intro {
@@ -55,13 +43,11 @@ body {
 }
 
 .projects {
-    width: 90%;
+    width: 95%;
     margin: 5rem 0;
 
     display: flex;
     flex-direction: column;
-
-    cursor: pointer;
 }
 
 .headline {
@@ -83,6 +69,7 @@ body {
     align-self: center;
 
     list-style: none;
+    cursor: default;
 }
 
 .item {
@@ -90,19 +77,23 @@ body {
     padding: 1rem 1.5rem;
 
     font-size: 1.25rem;
+    font-weight: bold;
     color: var(--black);
 
     border-radius: 1rem;
-
+    cursor: pointer;
+    
     transition: all 0.2s ease;
+    will-change: transform;
 }
 
 .item:not(.active):hover {
-    background: var(--green) 10%; /* TODO: Not working */
+    background: var(--green50);
+    color: white;
+    transform: scale(1.1);
 }
 
 .item.active {
-    font-weight: bold;
     color: white;
     background: var(--green);
 }
@@ -116,20 +107,28 @@ body {
 }
 
 .project {
-    width: var(--box-width);
     height: var(--box-height);
+    min-width: 0;
 
-    margin: 1rem 0;
+    margin: 0;
+
+    flex: 0;
 
     background-color: var(--green);
-
     border-radius: 10px;
 
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, flex 0.2s ease;
+    cursor: pointer;
 }
 
 .project:hover {
     transform: scale(1.02);
+}
+
+.project.visible {
+    flex: 1;
+    margin: 1rem;
+    min-width: 14%;
 }
 
 .footer {

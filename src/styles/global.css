@@ -4,21 +4,53 @@
     --red: #ec2e32;
     --pink: #e7075c;
     --green: #9aecc8;
+    --blue: #00088d;
 
     --black: #444;
 
+    /* Effects */
+    --green50: rgba(154, 236, 200, 0.5);
+
+    /* Gradients */
     --logoGradient: linear-gradient(to bottom, var(--orange), var(--red), var(--pink));
 
     /* Sizes */
     --header: 125px;
     --footer: 400px;
-
-    --box-width: 25vw;
-    --box-height: 60vh;
 }
 
-.withGradient {
-    background-image: var(--logoGradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+html {
+    height: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    margin: 0;
+
+    font-size: 16px;
+    color: var(--black);
+    font-family: 'Open Sans', sans-serif;
+    line-height: normal;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    cursor: default;
+}
+
+::-webkit-scrollbar-track {
+    background-color: white;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--green);
+    border: none;
 }

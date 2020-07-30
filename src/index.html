@@ -2,55 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-
-    <!-- Meta -->
     <title>Tinkering Playground</title>
     <meta name="description" content="Tinkering Playground">
     <meta name="author" content="TinkeringAround">
 
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="src/styles/index.css">
     <link rel="stylesheet" type="text/css" href="src/styles/global.css">
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="src/styles/effects.css">
 </head>
-
 <body>
 <header class="header">
     <h1 class="logo withGradient">ThomasMaier.</h1>
 </header>
 
 <main class="content">
-    <div class="intro"></div>
+    <section class="intro"></section>
 
     <section class="projects">
         <h1 class="headline withGradient">Projects</h1>
 
         <ul class="filter">
-            <li class="item active">
-               <a>Komponenten</a>
+            <li class="item">
+                <a>All</a>
             </li>
             <li class="item">
-                <a>Logos</a>
+               <a>Component</a>
+            </li>
+            <li class="item">
+                <a>Branding</a>
+            </li>
+            <li class="item">
+                Animation
             </li>
         </ul>
 
         <div class="list">
             <div class="project"></div>
             <div class="project"></div>
-            <div class="project "></div>
             <div class="project"></div>
             <div class="project"></div>
             <div class="project"></div>
             <div class="project"></div>
         </div>
     </section>
-
-
 </main>
 
-<footer class="footer">Footer</footer>
-</body>
+<footer class="footer"></footer>
 
+<!-- Scripts -->
+<script src="src/components/filter.js"></script>
+
+</body>
 </html>
