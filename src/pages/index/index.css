@@ -1,6 +1,6 @@
 :root {
     --box-width: 25vw;
-    --box-height: 40vh;
+    --box-height: 30vh;
 }
 
 main {
@@ -35,9 +35,9 @@ main {
 }
 
 .headline {
-    margin: 1rem 0;
+    margin: 1rem 0 0;
 
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
 }
 
@@ -98,7 +98,7 @@ main {
 
     flex: 0;
 
-    background-color: var(--green);
+    /*background-color: var(--green);*/
     border-radius: 10px;
 
     transition: transform 0.2s ease, flex 0.2s ease;
