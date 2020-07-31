@@ -3,23 +3,7 @@
     --box-height: 40vh;
 }
 
-.header {
-    width: 100%;
-    height: var(--header);
-
-    display: flex;
-    align-items: center;
-
-    box-sizing: border-box;
-}
-
-.logo {
-    margin: 0 0 0 4.5rem;
-
-    font-size: 2.5rem;
-}
-
-.content {
+main {
     width: 95%;
 
     padding: 2rem;
@@ -131,9 +115,3 @@
     min-width: 14%;
 }
 
-.footer {
-    width: 100%;
-    height: var(--footer);
-
-    background: var(--logoGradient);
-}

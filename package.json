@@ -6,9 +6,9 @@
   "author": "Thomas Maier <thomas.maier@juniq-it.de>",
   "license": "MIT",
   "dependencies": {
-    "live-server": "^1.2.1"
+    "netlify-cli": "^2.58.0"
   },
   "scripts": {
-    "dev": "live-server "
+    "dev": "netlify dev"
   }
 }

@@ -1,3 +1,6 @@
+import {addStylesheet} from "../../utility.js";
+
+//==========================================================
 class ProjectFilter {
     ITEM = ["item", "item active"];
     PROJECT = ["project", "project visible"]
@@ -38,4 +41,6 @@ class ProjectFilter {
     }
 }
 
+//==========================================================
+addStylesheet("./pages/index/index.css");
 new ProjectFilter();

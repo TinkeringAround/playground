@@ -1,12 +1,11 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1e012d25-27b4-495f-b395-f9bdcc4bfa9b/deploy-status)](https://app.netlify.com/sites/tinkeringaround-playground/deploys)
+
 # Tinkerin' Playground
 Just playing around.
 
 ## Setup
-### Live-Server
-Live-Server hat to be in $HOME directory on Windows.
+Run `yarn install` to install all packages.
 
 ## Development
-Run `yarn run dev` to start the hot reload Server.
-Then visit http://localhost:3000 to view dev environment.
-
-`Base-Path: http://localhost:3000/src/index.html`
+Run `yarn dev` to start the hot reload Netlify Dev Server.
+Then visit http://localhost:8888 to view the app.
