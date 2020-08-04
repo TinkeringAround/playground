@@ -1,0 +1,19 @@
+main {
+    display: flex;
+    justify-content: center;
+
+    padding: 3rem 0;
+}
+
+svg {
+    width: 64px;
+    height: 64px;
+
+    overflow: visible;
+
+    fill: none;
+
+    stroke: black;
+    stroke-width: 10px;
+    stroke-linecap: round;
+}

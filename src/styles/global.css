@@ -1,5 +1,5 @@
+/* Colors */
 :root {
-    /* Colors */
     --orange: #ef441c;
     --red: #ec2e32;
     --pink: #e7075c;
@@ -8,13 +8,15 @@
 
     --black: #444;
 
-    /* Effects */
+    /* Effect Colors */
     --green50: rgba(154, 236, 200, 0.5);
 
-    /* Gradients */
+    /* Gradient Colors  */
     --logoGradient: linear-gradient(to bottom, var(--orange), var(--red), var(--pink));
+}
 
-    /* Sizes */
+/* Sizes */
+:root {
     --header: 125px;
     --footer: 400px;
 }
@@ -39,6 +41,10 @@ body {
     align-items: center;
 
     cursor: default;
+}
+
+main {
+    width: 100%;
 }
 
 ::-webkit-scrollbar-track {

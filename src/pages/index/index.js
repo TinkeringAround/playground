@@ -1,12 +1,9 @@
-import {addStylesheet} from "../../utility.js";
-
-//==========================================================
 class ProjectFilter {
     ITEM = ["item", "item active"];
     PROJECT = ["project", "project visible"];
 
     FILTERS = ["All"];
-    PROJECTS = [{link: "./test", color: "var(--blue)"}];
+    PROJECTS = [{link: "./icons", color: "var(--blue)"}];
     FILTERED_PROJECTS = [[0]];
 
     items = [];
@@ -68,5 +65,4 @@ class ProjectFilter {
 }
 
 //==========================================================
-addStylesheet("./pages/index/index.css");
 new ProjectFilter();

@@ -14,7 +14,7 @@ main {
 
     box-sizing: border-box;
 
-    transition: height 0.5s ease;
+    transition: height var(--cubic);
 }
 
 .intro {
@@ -67,7 +67,7 @@ main {
     border-radius: 1rem;
     cursor: pointer;
     
-    transition: all 0.2s ease;
+    transition: all var(--cubic);
     will-change: transform;
 }
 
@@ -98,10 +98,9 @@ main {
 
     flex: 0;
 
-    /*background-color: var(--green);*/
     border-radius: 10px;
 
-    transition: transform 0.2s ease, flex 0.2s ease;
+    transition: transform var(--cubic), flex var(--cubic);
     cursor: pointer;
 }
 

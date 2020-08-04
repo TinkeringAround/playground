@@ -1,7 +1,8 @@
 import {addStylesheet} from "../../utility.js";
 
+// Path to Headline Mapping
 const HEADLINES = {
-    "test": "Test",
+    "icons": "Icon Collection",
     "": ""
 }
 
