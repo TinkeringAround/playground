@@ -1,10 +1,10 @@
 class ProjectFilter {
-    ITEM = ["item", "item active"];
-    PROJECT = ["project", "project visible"];
+    ACTIVE = "active";
+    VISIBLE = "visible";
 
     FILTERS = ["All"];
-    PROJECTS = [{link: "./icons", color: "var(--blue)"}];
-    FILTERED_PROJECTS = [[0]];
+    PROJECTS = [{link: "./icons", color: "var(--blue)"}, {link: "./designs", color: "var(--red)"}];
+    FILTERED_PROJECTS = [[0,1]];
 
     items = [];
     projects = [];
@@ -26,7 +26,7 @@ class ProjectFilter {
     createItem(filter, filterName, index) {
         const filterItem = document.createElement("li");
         filterItem.innerText = filterName;
-        filterItem.className = this.ITEM[0];
+        filterItem.classList.add("item");
         filterItem.onclick = event => this.onFilterItemClick(event, index);
         filter.appendChild(filterItem);
 
@@ -36,7 +36,7 @@ class ProjectFilter {
     createProject(list, project) {
         const projectItem = document.createElement("a");
         projectItem.href = project.link;
-        projectItem.className = this.PROJECT[0];
+        projectItem.classList.add("project");
         projectItem.style.backgroundColor = project.color;
         list.appendChild(projectItem);
 
@@ -44,7 +44,7 @@ class ProjectFilter {
     }
 
     onFilterItemClick(event, index) {
-        if (event.target.className.includes(this.ITEM[1]))
+        if (event.target.className.includes(this.ACTIVE))
             return;
 
         this.selectFilter(index);
@@ -52,14 +52,17 @@ class ProjectFilter {
     }
 
     selectFilter(index) {
-        for (let i = 0; i < this.items.length; i += 1)
-            this.items[i].className = this.ITEM[i === index ? 1 : 0];
+        for (let i = 0; i < this.items.length; i += 1) {
+            this.items[i].classList.remove(this.ACTIVE);
+            if (i === index) this.items[i].classList.add(this.ACTIVE);
+        }
     }
 
     filterProjects(index) {
         for (let i = 0; i < this.projects.length; i += 1) {
-            const shouldBeDisplayed = this.FILTERED_PROJECTS[index].includes(i);
-            this.projects[i].className = this.PROJECT[shouldBeDisplayed ? 1 : 0];
+            this.projects[i].classList.remove(this.VISIBLE);
+            if (this.FILTERED_PROJECTS[index].includes(i))
+                requestAnimationFrame(() => this.projects[i].classList.add(this.VISIBLE));
         }
     }
 }

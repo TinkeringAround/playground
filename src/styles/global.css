@@ -6,19 +6,15 @@
     --green: #9aecc8;
     --blue: #00088d;
 
+    --grey: rgb(232, 232, 232);
     --black: #444;
 
     /* Effect Colors */
     --green50: rgba(154, 236, 200, 0.5);
+    --grey10: rgba(232, 232, 232, 0.1);
 
     /* Gradient Colors  */
     --logoGradient: linear-gradient(to bottom, var(--orange), var(--red), var(--pink));
-}
-
-/* Sizes */
-:root {
-    --header: 125px;
-    --footer: 400px;
 }
 
 html {
@@ -35,6 +31,8 @@ body {
     color: var(--black);
     font-family: 'Open Sans', sans-serif;
     line-height: normal;
+
+    background: var(--grey10);
 
     display: flex;
     flex-direction: column;

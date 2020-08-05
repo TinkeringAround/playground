@@ -1,5 +1,5 @@
 :root {
-    --cubic: 350ms cubic-bezier(0.215,0.61,0.355,1);
+    --cubic: 500ms cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .withGradient {

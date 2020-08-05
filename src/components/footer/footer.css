@@ -1,6 +1,27 @@
+:root {
+    --footer: 400px;
+}
+
 footer {
     width: 100%;
     height: var(--footer);
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     background: var(--logoGradient);
+}
+
+.reference {
+    margin: 1rem 0;
+
+    align-self: flex-end;
+
+    color: var(--grey);
+
+    font-size: 1rem;
+    font-weight: normal;
+
+    text-decoration: none;
 }
