@@ -1,10 +1,13 @@
+import { scrollTop } from "../../utility.js";
+
+//==========================================================
 class ProjectFilter {
     ACTIVE = "active";
     VISIBLE = "visible";
 
     FILTERS = ["All"];
     PROJECTS = [{link: "./icons", color: "var(--blue)"}, {link: "./designs", color: "var(--red)"}];
-    FILTERED_PROJECTS = [[0,1]];
+    FILTERED_PROJECTS = [[0, 1]];
 
     items = [];
     projects = [];
@@ -69,3 +72,4 @@ class ProjectFilter {
 
 //==========================================================
 new ProjectFilter();
+scrollTop();

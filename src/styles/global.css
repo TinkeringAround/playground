@@ -19,12 +19,18 @@
 
 html {
     height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
 }
 
 body {
+    height: auto;
+    width: 100%;
+
     margin: 0;
 
     font-size: 16px;
@@ -39,10 +45,6 @@ body {
     align-items: center;
 
     cursor: default;
-}
-
-main {
-    width: 100%;
 }
 
 ::-webkit-scrollbar-track {
