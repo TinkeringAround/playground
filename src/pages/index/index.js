@@ -1,6 +1,3 @@
-import { scrollTop } from "../../utility.js";
-
-//==========================================================
 class ProjectFilter {
     ACTIVE = "active";
     VISIBLE = "visible";
@@ -72,4 +69,3 @@ class ProjectFilter {
 
 //==========================================================
 new ProjectFilter();
-scrollTop();

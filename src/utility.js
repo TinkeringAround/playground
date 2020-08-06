@@ -9,7 +9,7 @@ export const addStylesheet = (stylesheet) => {
     head.appendChild(style);
 }
 
-export const scrollTop = (timeout = 100) => {
+export const scrollTop = (timeout = 10) => {
     setTimeout(() =>
         window.scrollTo({top: 0, left: 0, behavior: "smooth"}), timeout);
 }
